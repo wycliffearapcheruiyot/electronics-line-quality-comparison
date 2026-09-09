@@ -1,0 +1,424 @@
+SHIFT HANDOFF NOTES - Electronics Assembly Plant
+Quarter: 2026-Q2 (Apr 1 - Jun 30, 2026)
+Format: [Date] [Line] [Shift] - Supervisor: note
+======================================================================
+
+[2026-04-02] [Line A] [Swing] - Supervisor: J. Kamau
+  Quiet shift on Standard, throughput steady.
+
+[2026-04-03] [Line A] [Swing] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-04-04] [Line A] [Day] - Supervisor: J. Kamau
+  Easy day, Standard units only, no major issues to report.
+
+[2026-04-04] [Line B] [Swing] - Supervisor: L. Chebet
+  Pro units today, definitely slower going and a few connector reworks needed.
+
+[2026-04-05] [Line A] [Swing] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-04-05] [Line B] [Day] - Supervisor: L. Chebet
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-04-06] [Line A] [Day] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-04-06] [Line B] [Night] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-04-08] [Line A] [Night] - Supervisor: J. Kamau
+  Standard run, line moving smooth, low defect callouts.
+
+[2026-04-08] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-04-09] [Line A] [Swing] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-04-09] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-04-10] [Line A] [Night] - Supervisor: M. Otieno
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-04-11] [Line A] [Day] - Supervisor: M. Otieno
+  Pro batch, capacitor supplier swap still causing occasional leaks.
+
+[2026-04-11] [Line B] [Day] - Supervisor: L. Chebet
+  Standard day, line running smooth, low volume.
+
+[2026-04-12] [Line A] [Night] - Supervisor: J. Kamau
+  Pro batch, capacitor supplier swap still causing occasional leaks.
+
+[2026-04-12] [Line B] [Night] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-04-13] [Line A] [Swing] - Supervisor: M. Otieno
+  Pro batch, capacitor supplier swap still causing occasional leaks.
+
+[2026-04-13] [Line B] [Day] - Supervisor: L. Chebet
+  Standard units all shift, nothing notable.
+
+[2026-04-14] [Line A] [Day] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-04-14] [Line B] [Swing] - Supervisor: F. Mutiso
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-04-15] [Line A] [Night] - Supervisor: J. Kamau
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-04-15] [Line B] [Swing] - Supervisor: L. Chebet
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-04-16] [Line A] [Swing] - Supervisor: J. Kamau
+  Standard variant, one label misprint caught early, otherwise clean.
+
+[2026-04-16] [Line B] [Day] - Supervisor: L. Chebet
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-04-17] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-04-18] [Line A] [Day] - Supervisor: J. Kamau
+  Quiet shift on Standard, throughput steady.
+
+[2026-04-18] [Line B] [Day] - Supervisor: F. Mutiso
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-04-19] [Line A] [Day] - Supervisor: M. Otieno
+  Pro run again today, tough batch. Solder rework kept us busy most of shift.
+
+[2026-04-19] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-04-20] [Line B] [Swing] - Supervisor: L. Chebet
+  Quiet Standard shift, no callouts from QC.
+
+[2026-04-21] [Line A] [Swing] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-04-21] [Line B] [Swing] - Supervisor: L. Chebet
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-04-22] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-04-22] [Line B] [Night] - Supervisor: L. Chebet
+  Standard units all shift, nothing notable.
+
+[2026-04-23] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-04-23] [Line B] [Night] - Supervisor: F. Mutiso
+  Ran Pro this shift, watch out for the firmware batch flagged by day shift.
+
+[2026-04-24] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro run again today, tough batch. Solder rework kept us busy most of shift.
+
+[2026-04-24] [Line B] [Night] - Supervisor: F. Mutiso
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-04-25] [Line A] [Swing] - Supervisor: M. Otieno
+  Pro batch, capacitor supplier swap still causing occasional leaks.
+
+[2026-04-25] [Line B] [Night] - Supervisor: F. Mutiso
+  Standard units all shift, nothing notable.
+
+[2026-04-26] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro batch, capacitor supplier swap still causing occasional leaks.
+
+[2026-04-26] [Line B] [Day] - Supervisor: L. Chebet
+  Standard day, line running smooth, low volume.
+
+[2026-04-27] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-04-27] [Line B] [Day] - Supervisor: L. Chebet
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-04-28] [Line A] [Swing] - Supervisor: M. Otieno
+  Pro run again today, tough batch. Solder rework kept us busy most of shift.
+
+[2026-04-28] [Line B] [Swing] - Supervisor: L. Chebet
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-04-29] [Line A] [Day] - Supervisor: J. Kamau
+  Easy day, Standard units only, no major issues to report.
+
+[2026-04-29] [Line B] [Swing] - Supervisor: L. Chebet
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-04-30] [Line A] [Swing] - Supervisor: M. Otieno
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-05-01] [Line A] [Day] - Supervisor: J. Kamau
+  Standard variant, one label misprint caught early, otherwise clean.
+
+[2026-05-02] [Line B] [Swing] - Supervisor: F. Mutiso
+  Pro units today, definitely slower going and a few connector reworks needed.
+
+[2026-05-03] [Line B] [Swing] - Supervisor: F. Mutiso
+  Standard units all shift, nothing notable.
+
+[2026-05-04] [Line A] [Night] - Supervisor: J. Kamau
+  Pro run again today, tough batch. Solder rework kept us busy most of shift.
+
+[2026-05-04] [Line B] [Swing] - Supervisor: L. Chebet
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-05-05] [Line A] [Swing] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-05-05] [Line B] [Swing] - Supervisor: F. Mutiso
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-05-06] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-05-06] [Line B] [Day] - Supervisor: F. Mutiso
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-05-08] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro run again today, tough batch. Solder rework kept us busy most of shift.
+
+[2026-05-08] [Line B] [Night] - Supervisor: F. Mutiso
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-05-09] [Line A] [Swing] - Supervisor: M. Otieno
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-05-09] [Line B] [Day] - Supervisor: L. Chebet
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-05-10] [Line A] [Swing] - Supervisor: J. Kamau
+  Standard run, line moving smooth, low defect callouts.
+
+[2026-05-10] [Line B] [Night] - Supervisor: F. Mutiso
+  Ran Pro this shift, watch out for the firmware batch flagged by day shift.
+
+[2026-05-11] [Line B] [Swing] - Supervisor: F. Mutiso
+  Quiet Standard shift, no callouts from QC.
+
+[2026-05-13] [Line A] [Swing] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-05-13] [Line B] [Swing] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-05-14] [Line A] [Night] - Supervisor: J. Kamau
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-05-14] [Line B] [Day] - Supervisor: L. Chebet
+  Quiet Standard shift, no callouts from QC.
+
+[2026-05-15] [Line A] [Day] - Supervisor: M. Otieno
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-05-15] [Line B] [Swing] - Supervisor: L. Chebet
+  Standard units all shift, nothing notable.
+
+[2026-05-16] [Line A] [Night] - Supervisor: J. Kamau
+  Easy day, Standard units only, no major issues to report.
+
+[2026-05-16] [Line B] [Swing] - Supervisor: F. Mutiso
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-05-17] [Line A] [Day] - Supervisor: M. Otieno
+  Pro batch, capacitor supplier swap still causing occasional leaks.
+
+[2026-05-18] [Line A] [Day] - Supervisor: J. Kamau
+  Pro batch, capacitor supplier swap still causing occasional leaks.
+
+[2026-05-20] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-05-21] [Line A] [Swing] - Supervisor: M. Otieno
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-05-21] [Line B] [Night] - Supervisor: F. Mutiso
+  Standard units all shift, nothing notable.
+
+[2026-05-22] [Line A] [Swing] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-05-23] [Line A] [Night] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-05-23] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard units all shift, nothing notable.
+
+[2026-05-24] [Line B] [Day] - Supervisor: L. Chebet
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-05-25] [Line B] [Swing] - Supervisor: F. Mutiso
+  Quiet Standard shift, no callouts from QC.
+
+[2026-05-26] [Line A] [Swing] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-05-26] [Line B] [Swing] - Supervisor: F. Mutiso
+  Pro units today, definitely slower going and a few connector reworks needed.
+
+[2026-05-27] [Line A] [Night] - Supervisor: J. Kamau
+  Pro run again today, tough batch. Solder rework kept us busy most of shift.
+
+[2026-05-27] [Line B] [Swing] - Supervisor: L. Chebet
+  Standard day, line running smooth, low volume.
+
+[2026-05-28] [Line A] [Swing] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-05-28] [Line B] [Swing] - Supervisor: L. Chebet
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-05-29] [Line A] [Day] - Supervisor: M. Otieno
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-05-29] [Line B] [Swing] - Supervisor: L. Chebet
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-05-30] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro batch, capacitor supplier swap still causing occasional leaks.
+
+[2026-05-30] [Line B] [Night] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-05-31] [Line A] [Swing] - Supervisor: M. Otieno
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-05-31] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-06-01] [Line B] [Swing] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-06-02] [Line A] [Swing] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-06-02] [Line B] [Swing] - Supervisor: F. Mutiso
+  Standard units all shift, nothing notable.
+
+[2026-06-03] [Line A] [Swing] - Supervisor: J. Kamau
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-06-03] [Line B] [Day] - Supervisor: L. Chebet
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-06-04] [Line A] [Night] - Supervisor: M. Otieno
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-06-04] [Line B] [Night] - Supervisor: F. Mutiso
+  Pro units today, definitely slower going and a few connector reworks needed.
+
+[2026-06-05] [Line B] [Night] - Supervisor: L. Chebet
+  Pro units today, definitely slower going and a few connector reworks needed.
+
+[2026-06-06] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard units all shift, nothing notable.
+
+[2026-06-07] [Line A] [Day] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-06-08] [Line A] [Swing] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-06-08] [Line B] [Day] - Supervisor: F. Mutiso
+  Ran Pro this shift, watch out for the firmware batch flagged by day shift.
+
+[2026-06-09] [Line A] [Swing] - Supervisor: M. Otieno
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-06-09] [Line B] [Night] - Supervisor: L. Chebet
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-06-10] [Line A] [Day] - Supervisor: M. Otieno
+  Pro run again today, tough batch. Solder rework kept us busy most of shift.
+
+[2026-06-10] [Line B] [Night] - Supervisor: F. Mutiso
+  Standard day, line running smooth, low volume.
+
+[2026-06-11] [Line A] [Swing] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-06-11] [Line B] [Day] - Supervisor: L. Chebet
+  Pro units today, definitely slower going and a few connector reworks needed.
+
+[2026-06-12] [Line B] [Day] - Supervisor: L. Chebet
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-06-13] [Line A] [Night] - Supervisor: J. Kamau
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-06-14] [Line A] [Night] - Supervisor: M. Otieno
+  Quiet shift on Standard, throughput steady.
+
+[2026-06-14] [Line B] [Swing] - Supervisor: L. Chebet
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-06-16] [Line B] [Day] - Supervisor: L. Chebet
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-06-17] [Line B] [Day] - Supervisor: L. Chebet
+  Standard day, line running smooth, low volume.
+
+[2026-06-19] [Line A] [Swing] - Supervisor: J. Kamau
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-06-19] [Line B] [Swing] - Supervisor: F. Mutiso
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-06-20] [Line A] [Night] - Supervisor: J. Kamau
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-06-20] [Line B] [Swing] - Supervisor: L. Chebet
+  Easy Standard run, ahead of schedule by end of shift.
+
+[2026-06-21] [Line A] [Night] - Supervisor: J. Kamau
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-06-22] [Line A] [Swing] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-06-22] [Line B] [Day] - Supervisor: L. Chebet
+  Quiet Standard shift, no callouts from QC.
+
+[2026-06-23] [Line A] [Swing] - Supervisor: M. Otieno
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-06-23] [Line B] [Day] - Supervisor: F. Mutiso
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-06-24] [Line A] [Day] - Supervisor: M. Otieno
+  On Pro all day. Firmware flashes acting up again on batch 3, had to reflash twice.
+
+[2026-06-24] [Line B] [Night] - Supervisor: L. Chebet
+  Standard variant, minor label print issue, fixed mid-shift.
+
+[2026-06-25] [Line A] [Day] - Supervisor: J. Kamau
+  Quiet shift on Standard, throughput steady.
+
+[2026-06-25] [Line B] [Day] - Supervisor: L. Chebet
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-06-26] [Line A] [Day] - Supervisor: J. Kamau
+  Standard variant, one label misprint caught early, otherwise clean.
+
+[2026-06-27] [Line A] [Day] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-06-28] [Line A] [Swing] - Supervisor: M. Otieno
+  Pro variant, connector seating giving us grief on the newer housings.
+
+[2026-06-28] [Line B] [Night] - Supervisor: F. Mutiso
+  Pro variant, kept an eye on housing tolerances per QC's last note.
+
+[2026-06-29] [Line A] [Swing] - Supervisor: M. Otieno
+  Rough day on Pro units, several housing cracks flagged before they even hit QC.
+
+[2026-06-29] [Line B] [Night] - Supervisor: L. Chebet
+  Quiet Standard shift, no callouts from QC.
+
+[2026-06-30] [Line A] [Night] - Supervisor: M. Otieno
+  Pro batch, capacitor supplier swap still causing occasional leaks.
