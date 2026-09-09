@@ -1,8 +1,29 @@
-Example gold-patch stub — replace with the real unified diff (git diff
-format) that turns the fresh workspace into the solved state.
-
+diff --git a/output/recommendation.md b/output/recommendation.md
+new file mode 100644
+index 0000000..3097004
 --- /dev/null
 +++ b/output/recommendation.md
-@@ -0,0 +1,2 @@
-+Replace with the deterministic final recommendation, exactly as the gold
-+solution produces it.
+@@ -0,0 +1,12 @@
++## Recommendation
++
++Recommended line: Line A
++
++## Supporting Figures
++
++| Line | Variant | Defect Rate (%) | Mix (%) |
++|------|---------|------------------|---------|
++| Line A | Standard | 2.1 | 45 |
++| Line A | Pro | 6.4 | 55 |
++| Line B | Standard | 2.6 | 85 |
++| Line B | Pro | 7.8 | 15 |
+diff --git a/output/summary.csv b/output/summary.csv
+new file mode 100644
+index 0000000..26ac1ed
+--- /dev/null
++++ b/output/summary.csv
+@@ -0,0 +1,5 @@
++line,product_variant,defect_rate_pct,mix_pct
++Line A,Standard,2.1,45
++Line A,Pro,6.4,55
++Line B,Standard,2.6,85
++Line B,Pro,7.8,15
