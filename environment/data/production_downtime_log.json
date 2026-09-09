@@ -1,0 +1,1073 @@
+[
+  {
+    "line": "Line A",
+    "date": "2026-04-01",
+    "downtime_minutes": 11,
+    "reason": "unplanned_maintenance",
+    "units_produced": 38
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-01",
+    "downtime_minutes": 21,
+    "reason": "material_shortage",
+    "units_produced": 48
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-02",
+    "downtime_minutes": 27,
+    "reason": "material_shortage",
+    "units_produced": 29
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-02",
+    "downtime_minutes": 32,
+    "reason": "changeover",
+    "units_produced": 34
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-03",
+    "downtime_minutes": 82,
+    "reason": "pro_line_recalibration",
+    "units_produced": 43
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-03",
+    "downtime_minutes": 20,
+    "reason": "tooling_adjustment",
+    "units_produced": 50
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-04",
+    "downtime_minutes": 60,
+    "reason": "material_shortage",
+    "units_produced": 40
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-05",
+    "downtime_minutes": 61,
+    "reason": "changeover",
+    "units_produced": 31
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-05",
+    "downtime_minutes": 24,
+    "reason": "operator_break_overrun",
+    "units_produced": 36
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-06",
+    "downtime_minutes": 84,
+    "reason": "unplanned_maintenance",
+    "units_produced": 33
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-07",
+    "downtime_minutes": 18,
+    "reason": "tooling_adjustment",
+    "units_produced": 32
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-08",
+    "downtime_minutes": 73,
+    "reason": "operator_break_overrun",
+    "units_produced": 31
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-09",
+    "downtime_minutes": 66,
+    "reason": "pro_line_recalibration",
+    "units_produced": 33
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-10",
+    "downtime_minutes": 38,
+    "reason": "material_shortage",
+    "units_produced": 36
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-11",
+    "downtime_minutes": 78,
+    "reason": "pro_line_recalibration",
+    "units_produced": 46
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-11",
+    "downtime_minutes": 38,
+    "reason": "tooling_adjustment",
+    "units_produced": 48
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-12",
+    "downtime_minutes": 48,
+    "reason": "tooling_adjustment",
+    "units_produced": 33
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-13",
+    "downtime_minutes": 40,
+    "reason": "planned_maintenance",
+    "units_produced": 27
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-13",
+    "downtime_minutes": 38,
+    "reason": "material_shortage",
+    "units_produced": 45
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-14",
+    "downtime_minutes": 62,
+    "reason": "unplanned_maintenance",
+    "units_produced": 30
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-14",
+    "downtime_minutes": 59,
+    "reason": "tooling_adjustment",
+    "units_produced": 43
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-15",
+    "downtime_minutes": 54,
+    "reason": "pro_line_recalibration",
+    "units_produced": 36
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-15",
+    "downtime_minutes": 63,
+    "reason": "planned_maintenance",
+    "units_produced": 48
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-16",
+    "downtime_minutes": 58,
+    "reason": "quality_hold",
+    "units_produced": 24
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-16",
+    "downtime_minutes": 54,
+    "reason": "changeover",
+    "units_produced": 48
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-17",
+    "downtime_minutes": 33,
+    "reason": "planned_maintenance",
+    "units_produced": 44
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-18",
+    "downtime_minutes": 41,
+    "reason": "changeover",
+    "units_produced": 32
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-19",
+    "downtime_minutes": 38,
+    "reason": "quality_hold",
+    "units_produced": 44
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-20",
+    "downtime_minutes": 49,
+    "reason": "unplanned_maintenance",
+    "units_produced": 42
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-20",
+    "downtime_minutes": 28,
+    "reason": "quality_hold",
+    "units_produced": 34
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-21",
+    "downtime_minutes": 85,
+    "reason": "quality_hold",
+    "units_produced": 43
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-21",
+    "downtime_minutes": 61,
+    "reason": "tooling_adjustment",
+    "units_produced": 35
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-22",
+    "downtime_minutes": 26,
+    "reason": "unplanned_maintenance",
+    "units_produced": 36
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-22",
+    "downtime_minutes": 26,
+    "reason": "changeover",
+    "units_produced": 43
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-24",
+    "downtime_minutes": 60,
+    "reason": "pro_line_recalibration",
+    "units_produced": 32
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-24",
+    "downtime_minutes": 57,
+    "reason": "quality_hold",
+    "units_produced": 49
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-25",
+    "downtime_minutes": 73,
+    "reason": "planned_maintenance",
+    "units_produced": 26
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-25",
+    "downtime_minutes": 55,
+    "reason": "tooling_adjustment",
+    "units_produced": 47
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-26",
+    "downtime_minutes": 44,
+    "reason": "changeover",
+    "units_produced": 30
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-27",
+    "downtime_minutes": 46,
+    "reason": "changeover",
+    "units_produced": 31
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-28",
+    "downtime_minutes": 0,
+    "reason": "tooling_adjustment",
+    "units_produced": 26
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-28",
+    "downtime_minutes": 26,
+    "reason": "planned_maintenance",
+    "units_produced": 44
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-29",
+    "downtime_minutes": 47,
+    "reason": "changeover",
+    "units_produced": 28
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-29",
+    "downtime_minutes": 15,
+    "reason": "planned_maintenance",
+    "units_produced": 45
+  },
+  {
+    "line": "Line A",
+    "date": "2026-04-30",
+    "downtime_minutes": 62,
+    "reason": "material_shortage",
+    "units_produced": 44
+  },
+  {
+    "line": "Line B",
+    "date": "2026-04-30",
+    "downtime_minutes": 33,
+    "reason": "planned_maintenance",
+    "units_produced": 39
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-01",
+    "downtime_minutes": 79,
+    "reason": "changeover",
+    "units_produced": 35
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-01",
+    "downtime_minutes": 41,
+    "reason": "material_shortage",
+    "units_produced": 52
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-02",
+    "downtime_minutes": 75,
+    "reason": "unplanned_maintenance",
+    "units_produced": 45
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-02",
+    "downtime_minutes": 26,
+    "reason": "changeover",
+    "units_produced": 43
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-03",
+    "downtime_minutes": 30,
+    "reason": "pro_line_recalibration",
+    "units_produced": 36
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-03",
+    "downtime_minutes": 24,
+    "reason": "changeover",
+    "units_produced": 49
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-04",
+    "downtime_minutes": 64,
+    "reason": "quality_hold",
+    "units_produced": 40
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-05",
+    "downtime_minutes": 56,
+    "reason": "unplanned_maintenance",
+    "units_produced": 46
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-05",
+    "downtime_minutes": 37,
+    "reason": "changeover",
+    "units_produced": 46
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-06",
+    "downtime_minutes": 50,
+    "reason": "unplanned_maintenance",
+    "units_produced": 26
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-07",
+    "downtime_minutes": 87,
+    "reason": "unplanned_maintenance",
+    "units_produced": 45
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-07",
+    "downtime_minutes": 50,
+    "reason": "planned_maintenance",
+    "units_produced": 30
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-08",
+    "downtime_minutes": 51,
+    "reason": "tooling_adjustment",
+    "units_produced": 29
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-08",
+    "downtime_minutes": 24,
+    "reason": "quality_hold",
+    "units_produced": 44
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-09",
+    "downtime_minutes": 42,
+    "reason": "pro_line_recalibration",
+    "units_produced": 30
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-09",
+    "downtime_minutes": 53,
+    "reason": "material_shortage",
+    "units_produced": 36
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-10",
+    "downtime_minutes": 41,
+    "reason": "planned_maintenance",
+    "units_produced": 28
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-10",
+    "downtime_minutes": 27,
+    "reason": "tooling_adjustment",
+    "units_produced": 31
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-11",
+    "downtime_minutes": 37,
+    "reason": "planned_maintenance",
+    "units_produced": 45
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-12",
+    "downtime_minutes": 48,
+    "reason": "pro_line_recalibration",
+    "units_produced": 37
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-12",
+    "downtime_minutes": 20,
+    "reason": "quality_hold",
+    "units_produced": 49
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-13",
+    "downtime_minutes": 58,
+    "reason": "operator_break_overrun",
+    "units_produced": 25
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-13",
+    "downtime_minutes": 56,
+    "reason": "planned_maintenance",
+    "units_produced": 48
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-14",
+    "downtime_minutes": 66,
+    "reason": "changeover",
+    "units_produced": 42
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-14",
+    "downtime_minutes": 25,
+    "reason": "material_shortage",
+    "units_produced": 38
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-15",
+    "downtime_minutes": 66,
+    "reason": "material_shortage",
+    "units_produced": 25
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-15",
+    "downtime_minutes": 19,
+    "reason": "changeover",
+    "units_produced": 41
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-16",
+    "downtime_minutes": 34,
+    "reason": "unplanned_maintenance",
+    "units_produced": 30
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-16",
+    "downtime_minutes": 28,
+    "reason": "tooling_adjustment",
+    "units_produced": 47
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-17",
+    "downtime_minutes": 9,
+    "reason": "operator_break_overrun",
+    "units_produced": 41
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-18",
+    "downtime_minutes": 27,
+    "reason": "pro_line_recalibration",
+    "units_produced": 29
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-18",
+    "downtime_minutes": 31,
+    "reason": "material_shortage",
+    "units_produced": 52
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-19",
+    "downtime_minutes": 32,
+    "reason": "material_shortage",
+    "units_produced": 44
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-20",
+    "downtime_minutes": 46,
+    "reason": "pro_line_recalibration",
+    "units_produced": 24
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-20",
+    "downtime_minutes": 23,
+    "reason": "quality_hold",
+    "units_produced": 40
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-21",
+    "downtime_minutes": 36,
+    "reason": "material_shortage",
+    "units_produced": 30
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-21",
+    "downtime_minutes": 42,
+    "reason": "changeover",
+    "units_produced": 52
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-22",
+    "downtime_minutes": 29,
+    "reason": "material_shortage",
+    "units_produced": 36
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-22",
+    "downtime_minutes": 8,
+    "reason": "planned_maintenance",
+    "units_produced": 40
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-23",
+    "downtime_minutes": 49,
+    "reason": "tooling_adjustment",
+    "units_produced": 24
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-23",
+    "downtime_minutes": 47,
+    "reason": "planned_maintenance",
+    "units_produced": 43
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-24",
+    "downtime_minutes": 62,
+    "reason": "quality_hold",
+    "units_produced": 24
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-24",
+    "downtime_minutes": 58,
+    "reason": "operator_break_overrun",
+    "units_produced": 35
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-25",
+    "downtime_minutes": 73,
+    "reason": "unplanned_maintenance",
+    "units_produced": 28
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-25",
+    "downtime_minutes": 10,
+    "reason": "tooling_adjustment",
+    "units_produced": 51
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-26",
+    "downtime_minutes": 54,
+    "reason": "material_shortage",
+    "units_produced": 39
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-26",
+    "downtime_minutes": 16,
+    "reason": "tooling_adjustment",
+    "units_produced": 47
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-27",
+    "downtime_minutes": 68,
+    "reason": "operator_break_overrun",
+    "units_produced": 40
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-27",
+    "downtime_minutes": 12,
+    "reason": "material_shortage",
+    "units_produced": 49
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-28",
+    "downtime_minutes": 86,
+    "reason": "operator_break_overrun",
+    "units_produced": 28
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-28",
+    "downtime_minutes": 39,
+    "reason": "changeover",
+    "units_produced": 46
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-29",
+    "downtime_minutes": 83,
+    "reason": "changeover",
+    "units_produced": 24
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-29",
+    "downtime_minutes": 12,
+    "reason": "changeover",
+    "units_produced": 48
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-30",
+    "downtime_minutes": 81,
+    "reason": "planned_maintenance",
+    "units_produced": 46
+  },
+  {
+    "line": "Line A",
+    "date": "2026-05-31",
+    "downtime_minutes": 10,
+    "reason": "operator_break_overrun",
+    "units_produced": 36
+  },
+  {
+    "line": "Line B",
+    "date": "2026-05-31",
+    "downtime_minutes": 53,
+    "reason": "material_shortage",
+    "units_produced": 45
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-01",
+    "downtime_minutes": 99,
+    "reason": "tooling_adjustment",
+    "units_produced": 39
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-02",
+    "downtime_minutes": 27,
+    "reason": "operator_break_overrun",
+    "units_produced": 24
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-02",
+    "downtime_minutes": 34,
+    "reason": "material_shortage",
+    "units_produced": 36
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-03",
+    "downtime_minutes": 53,
+    "reason": "operator_break_overrun",
+    "units_produced": 45
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-03",
+    "downtime_minutes": 21,
+    "reason": "quality_hold",
+    "units_produced": 33
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-04",
+    "downtime_minutes": 82,
+    "reason": "operator_break_overrun",
+    "units_produced": 27
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-04",
+    "downtime_minutes": 24,
+    "reason": "quality_hold",
+    "units_produced": 30
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-05",
+    "downtime_minutes": 14,
+    "reason": "planned_maintenance",
+    "units_produced": 40
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-05",
+    "downtime_minutes": 46,
+    "reason": "operator_break_overrun",
+    "units_produced": 36
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-06",
+    "downtime_minutes": 37,
+    "reason": "planned_maintenance",
+    "units_produced": 41
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-06",
+    "downtime_minutes": 32,
+    "reason": "planned_maintenance",
+    "units_produced": 35
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-07",
+    "downtime_minutes": 17,
+    "reason": "quality_hold",
+    "units_produced": 30
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-07",
+    "downtime_minutes": 36,
+    "reason": "material_shortage",
+    "units_produced": 37
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-08",
+    "downtime_minutes": 67,
+    "reason": "pro_line_recalibration",
+    "units_produced": 32
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-09",
+    "downtime_minutes": 23,
+    "reason": "quality_hold",
+    "units_produced": 28
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-09",
+    "downtime_minutes": 46,
+    "reason": "changeover",
+    "units_produced": 51
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-10",
+    "downtime_minutes": 16,
+    "reason": "changeover",
+    "units_produced": 41
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-11",
+    "downtime_minutes": 89,
+    "reason": "tooling_adjustment",
+    "units_produced": 44
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-11",
+    "downtime_minutes": 30,
+    "reason": "quality_hold",
+    "units_produced": 32
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-13",
+    "downtime_minutes": 44,
+    "reason": "unplanned_maintenance",
+    "units_produced": 40
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-13",
+    "downtime_minutes": 38,
+    "reason": "planned_maintenance",
+    "units_produced": 35
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-14",
+    "downtime_minutes": 71,
+    "reason": "changeover",
+    "units_produced": 27
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-14",
+    "downtime_minutes": 31,
+    "reason": "planned_maintenance",
+    "units_produced": 33
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-15",
+    "downtime_minutes": 49,
+    "reason": "tooling_adjustment",
+    "units_produced": 37
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-15",
+    "downtime_minutes": 32,
+    "reason": "changeover",
+    "units_produced": 52
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-16",
+    "downtime_minutes": 55,
+    "reason": "pro_line_recalibration",
+    "units_produced": 29
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-16",
+    "downtime_minutes": 32,
+    "reason": "operator_break_overrun",
+    "units_produced": 36
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-17",
+    "downtime_minutes": 35,
+    "reason": "changeover",
+    "units_produced": 40
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-17",
+    "downtime_minutes": 58,
+    "reason": "quality_hold",
+    "units_produced": 50
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-18",
+    "downtime_minutes": 79,
+    "reason": "tooling_adjustment",
+    "units_produced": 30
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-18",
+    "downtime_minutes": 32,
+    "reason": "quality_hold",
+    "units_produced": 35
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-19",
+    "downtime_minutes": 106,
+    "reason": "tooling_adjustment",
+    "units_produced": 34
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-19",
+    "downtime_minutes": 35,
+    "reason": "changeover",
+    "units_produced": 35
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-20",
+    "downtime_minutes": 35,
+    "reason": "unplanned_maintenance",
+    "units_produced": 33
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-21",
+    "downtime_minutes": 105,
+    "reason": "quality_hold",
+    "units_produced": 25
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-21",
+    "downtime_minutes": 32,
+    "reason": "planned_maintenance",
+    "units_produced": 51
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-22",
+    "downtime_minutes": 42,
+    "reason": "material_shortage",
+    "units_produced": 41
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-22",
+    "downtime_minutes": 17,
+    "reason": "tooling_adjustment",
+    "units_produced": 45
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-23",
+    "downtime_minutes": 74,
+    "reason": "changeover",
+    "units_produced": 42
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-24",
+    "downtime_minutes": 44,
+    "reason": "quality_hold",
+    "units_produced": 44
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-25",
+    "downtime_minutes": 60,
+    "reason": "material_shortage",
+    "units_produced": 24
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-25",
+    "downtime_minutes": 12,
+    "reason": "planned_maintenance",
+    "units_produced": 38
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-26",
+    "downtime_minutes": 0,
+    "reason": "material_shortage",
+    "units_produced": 42
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-26",
+    "downtime_minutes": 32,
+    "reason": "changeover",
+    "units_produced": 50
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-27",
+    "downtime_minutes": 31,
+    "reason": "planned_maintenance",
+    "units_produced": 36
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-27",
+    "downtime_minutes": 1,
+    "reason": "quality_hold",
+    "units_produced": 35
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-28",
+    "downtime_minutes": 38,
+    "reason": "pro_line_recalibration",
+    "units_produced": 39
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-28",
+    "downtime_minutes": 24,
+    "reason": "operator_break_overrun",
+    "units_produced": 42
+  },
+  {
+    "line": "Line A",
+    "date": "2026-06-29",
+    "downtime_minutes": 33,
+    "reason": "operator_break_overrun",
+    "units_produced": 32
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-29",
+    "downtime_minutes": 30,
+    "reason": "changeover",
+    "units_produced": 39
+  },
+  {
+    "line": "Line B",
+    "date": "2026-06-30",
+    "downtime_minutes": 42,
+    "reason": "quality_hold",
+    "units_produced": 51
+  }
+]
