@@ -1,0 +1,8 @@
+Example gold-patch stub — replace with the real unified diff (git diff
+format) that turns the fresh workspace into the solved state.
+
+--- /dev/null
++++ b/output/recommendation.md
+@@ -0,0 +1,2 @@
++Replace with the deterministic final recommendation, exactly as the gold
++solution produces it.

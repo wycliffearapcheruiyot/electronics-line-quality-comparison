@@ -1,0 +1,11 @@
+[
+  {
+    "item": 1,
+    "weight": 1,
+    "criterion": "Placeholder criterion — replace with the real rubric.",
+    "category": "recommend",
+    "verification_type": "text",
+    "is_recommendation_criterion": true,
+    "grades_output_files": ["recommendation.md"]
+  }
+]
