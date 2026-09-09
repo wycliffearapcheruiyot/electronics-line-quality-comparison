@@ -1,18 +1,15 @@
-# Agent-environment image (placeholder).
-#
-# PIN the base image by digest — a bare tag ("latest", "3.12-slim") is not
-# reproducible and fails the build check. Resolve the real digest with:
-#   docker pull python:3.12-slim
-#   docker inspect --format '{{index .RepoDigests 0}}' python:3.12-slim
-FROM python:3.12-slim@sha256:0000000000000000000000000000000000000000000000000000000000000000
+FROM ubuntu:22.04
 
-WORKDIR /workspace
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3 \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
 
-# The build context is this environment/ directory. Place the task's input
-# files beside this Dockerfile (e.g. environment/data/) and stage ONLY them.
-# Never COPY tests/ or solution/ into this image — the model must not be able
-# to see either.
-COPY data/ /workspace/data/
+RUN pip3 install --no-cache-dir \
+    pandas \
+    openpyxl \
+    pypdf
 
-# Preinstall only what the task's START state requires.
-RUN pip install --no-cache-dir pandas
+COPY data/ /data/
+
+WORKDIR /data
