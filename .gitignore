@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Local test-output folders
+output/
+test-output/
+logs/
+
+# Review/submission packages
+*.zip
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
