@@ -1,4 +1,4 @@
-# Task configuration (placeholder — replace every "replace" marker).
+# Task configuration.
 # Only the allowlisted keys shown here are honored at ingest. Anything else is
 # dropped and reported, and executable keys (docker_image, mcp_servers, env
 # tables, ...) are refused outright — the platform re-derives runtime facts
@@ -18,8 +18,8 @@ name = "baby-carrot/electronics-line-quality-comparison"
 # Display-only strings (max 200 chars each).
 difficulty = "hard"
 category = "analytics"
-tags = []
-# source = "Where sourced input data came from — replace or delete."
+tags = ["manufacturing", "comparative-analysis", "product-mix", "quality-engineering"]
+source = "Synthetic data generated for this task; no external dataset used."
 
 [agent]
 # Turn ceiling per trial (max 600).
