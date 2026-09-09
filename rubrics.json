@@ -1,11 +1,299 @@
 [
   {
     "item": 1,
-    "weight": 1,
-    "criterion": "Placeholder criterion — replace with the real rubric.",
+    "weight": 15,
+    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or the exact line \"Recommended line: Line B\", appearing on its own line.",
     "category": "recommend",
-    "verification_type": "text",
+    "verification_type": "text_exact_line",
     "is_recommendation_criterion": true,
     "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 2,
+    "weight": 10,
+    "criterion": "summary.csv contains a row where line is \"Line A\", product_variant is \"Standard\", and defect_rate_pct is between 2.0 and 2.2 inclusive.",
+    "category": "recommend",
+    "verification_type": "csv_row_range",
+    "is_recommendation_criterion": true,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 3,
+    "weight": 10,
+    "criterion": "summary.csv contains a row where line is \"Line A\", product_variant is \"Pro\", and defect_rate_pct is between 6.3 and 6.5 inclusive.",
+    "category": "recommend",
+    "verification_type": "csv_row_range",
+    "is_recommendation_criterion": true,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 4,
+    "weight": 3,
+    "criterion": "recommendation.md exists as a file.",
+    "category": "format",
+    "verification_type": "file_exists",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 5,
+    "weight": 3,
+    "criterion": "summary.csv exists as a file.",
+    "category": "format",
+    "verification_type": "file_exists",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 6,
+    "weight": 2,
+    "criterion": "recommendation.md contains a section heading exactly \"## Recommendation\".",
+    "category": "format",
+    "verification_type": "text_exact_line",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 7,
+    "weight": 2,
+    "criterion": "recommendation.md contains a section heading exactly \"## Supporting Figures\".",
+    "category": "format",
+    "verification_type": "text_exact_line",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 8,
+    "weight": 3,
+    "criterion": "recommendation.md's Supporting Figures section contains a markdown table whose header row is exactly \"| Line | Variant | Defect Rate (%) | Mix (%) |\".",
+    "category": "format",
+    "verification_type": "text_exact_line",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 9,
+    "weight": 3,
+    "criterion": "summary.csv's first line is exactly \"line,product_variant,defect_rate_pct,mix_pct\".",
+    "category": "format",
+    "verification_type": "text_exact_line",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 10,
+    "weight": 2,
+    "criterion": "summary.csv contains exactly 5 lines total (1 header row plus 4 data rows).",
+    "category": "format",
+    "verification_type": "csv_row_count",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 11,
+    "weight": 2,
+    "criterion": "recommendation.md's Supporting Figures table contains exactly 4 data rows.",
+    "category": "format",
+    "verification_type": "table_row_count",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 12,
+    "weight": 4,
+    "criterion": "summary.csv contains a row where line is \"Line B\", product_variant is \"Standard\", and defect_rate_pct is between 2.5 and 2.7 inclusive.",
+    "category": "figures",
+    "verification_type": "csv_row_range",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 13,
+    "weight": 4,
+    "criterion": "summary.csv contains a row where line is \"Line B\", product_variant is \"Pro\", and defect_rate_pct is between 7.7 and 7.9 inclusive.",
+    "category": "figures",
+    "verification_type": "csv_row_range",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 14,
+    "weight": 3,
+    "criterion": "summary.csv contains a row where line is \"Line A\", product_variant is \"Standard\", and mix_pct is between 44 and 46 inclusive.",
+    "category": "figures",
+    "verification_type": "csv_row_range",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 15,
+    "weight": 3,
+    "criterion": "summary.csv contains a row where line is \"Line A\", product_variant is \"Pro\", and mix_pct is between 54 and 56 inclusive.",
+    "category": "figures",
+    "verification_type": "csv_row_range",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 16,
+    "weight": 3,
+    "criterion": "summary.csv contains a row where line is \"Line B\", product_variant is \"Standard\", and mix_pct is between 84 and 86 inclusive.",
+    "category": "figures",
+    "verification_type": "csv_row_range",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 17,
+    "weight": 3,
+    "criterion": "summary.csv contains a row where line is \"Line B\", product_variant is \"Pro\", and mix_pct is between 14 and 16 inclusive.",
+    "category": "figures",
+    "verification_type": "csv_row_range",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 18,
+    "weight": 2,
+    "criterion": "Every value in summary.csv's line column is exactly \"Line A\" or exactly \"Line B\".",
+    "category": "format",
+    "verification_type": "csv_column_values",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 19,
+    "weight": 2,
+    "criterion": "Every value in summary.csv's product_variant column is exactly \"Standard\" or exactly \"Pro\".",
+    "category": "format",
+    "verification_type": "csv_column_values",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 20,
+    "weight": 3,
+    "criterion": "Every defect_rate_pct value in summary.csv is written with exactly 1 digit after the decimal point.",
+    "category": "precision",
+    "verification_type": "csv_number_format",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 21,
+    "weight": 3,
+    "criterion": "Every mix_pct value in summary.csv is written as a whole number with no decimal point.",
+    "category": "precision",
+    "verification_type": "csv_number_format",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 22,
+    "weight": 3,
+    "criterion": "The Line A / Standard defect-rate figure in recommendation.md's Supporting Figures table is numerically identical to the Line A/Standard defect_rate_pct value in summary.csv.",
+    "category": "consistency",
+    "verification_type": "cross_file_match",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md", "summary.csv"]
+  },
+  {
+    "item": 23,
+    "weight": 3,
+    "criterion": "The Line B / Pro defect-rate figure in recommendation.md's Supporting Figures table is numerically identical to the Line B/Pro defect_rate_pct value in summary.csv.",
+    "category": "consistency",
+    "verification_type": "cross_file_match",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md", "summary.csv"]
+  },
+  {
+    "item": 24,
+    "weight": 2,
+    "criterion": "The Line A / Pro defect-rate figure in recommendation.md's Supporting Figures table is numerically identical to the Line A/Pro defect_rate_pct value in summary.csv.",
+    "category": "consistency",
+    "verification_type": "cross_file_match",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md", "summary.csv"]
+  },
+  {
+    "item": 25,
+    "weight": 2,
+    "criterion": "The Line B / Standard defect-rate figure in recommendation.md's Supporting Figures table is numerically identical to the Line B/Standard defect_rate_pct value in summary.csv.",
+    "category": "consistency",
+    "verification_type": "cross_file_match",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md", "summary.csv"]
+  },
+  {
+    "item": 26,
+    "weight": 2,
+    "criterion": "recommendation.md's Supporting Figures table contains a row for Line A / Standard.",
+    "category": "format",
+    "verification_type": "table_row_presence",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 27,
+    "weight": 2,
+    "criterion": "recommendation.md's Supporting Figures table contains a row for Line A / Pro.",
+    "category": "format",
+    "verification_type": "table_row_presence",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 28,
+    "weight": 2,
+    "criterion": "recommendation.md's Supporting Figures table contains a row for Line B / Standard.",
+    "category": "format",
+    "verification_type": "table_row_presence",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 29,
+    "weight": 2,
+    "criterion": "recommendation.md's Supporting Figures table contains a row for Line B / Pro.",
+    "category": "format",
+    "verification_type": "table_row_presence",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 30,
+    "weight": 2,
+    "criterion": "The output/ directory contains no files other than recommendation.md and summary.csv.",
+    "category": "format",
+    "verification_type": "directory_listing",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md", "summary.csv"]
+  },
+  {
+    "item": 31,
+    "weight": -5,
+    "criterion": "Penalty: recommendation.md contains both the exact line \"Recommended line: Line A\" and the exact line \"Recommended line: Line B\".",
+    "category": "penalty",
+    "verification_type": "text_exact_line",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["recommendation.md"]
+  },
+  {
+    "item": 32,
+    "weight": -5,
+    "criterion": "Penalty: summary.csv's two Line A mix_pct values (Standard and Pro) do not sum to 100.",
+    "category": "penalty",
+    "verification_type": "csv_internal_consistency",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
+  },
+  {
+    "item": 33,
+    "weight": -5,
+    "criterion": "Penalty: summary.csv's two Line B mix_pct values (Standard and Pro) do not sum to 100.",
+    "category": "penalty",
+    "verification_type": "csv_internal_consistency",
+    "is_recommendation_criterion": false,
+    "grades_output_files": ["summary.csv"]
   }
 ]
