@@ -4,18 +4,34 @@ set -euo pipefail
 # Materializes the gold solution outputs from the task's input data.
 # Deterministic: same input -> same output, byte-for-byte.
 
-cd "$(dirname "$0")/.."   # repo root, so paths match the environment layout
+# Prefer the container's runtime layout (input at /data, output at
+# /output — matching environment/Dockerfile's COPY destination and
+# tests/verify.py's OUTPUT_DIR) so this produces identical bytes whether
+# Harbor runs it inside the oracle container or you run it locally
+# against a repo checkout for testing.
+if [ -d /data ]; then
+  DATA_DIR=/data
+  OUT_DIR=/output
+else
+  cd "$(dirname "$0")/.."   # repo root, for local testing outside a container
+  DATA_DIR=environment/data
+  OUT_DIR=output
+fi
 
-mkdir -p output
+mkdir -p "$OUT_DIR"
 
-python3 - <<'PY'
+DATA_DIR="$DATA_DIR" OUT_DIR="$OUT_DIR" python3 - <<'PY'
 import csv
+import os
 from collections import defaultdict
+
+DATA_DIR = os.environ["DATA_DIR"]
+OUT_DIR = os.environ["OUT_DIR"]
 
 counts = defaultdict(lambda: {"units": 0, "defects": 0})
 totals = defaultdict(int)
 
-with open("environment/data/defect_log.csv", newline="") as fh:
+with open(f"{DATA_DIR}/defect_log.csv", newline="") as fh:
     reader = csv.DictReader(fh)
     for row in reader:
         line = row["line"]
@@ -36,7 +52,7 @@ for line in ["Line A", "Line B"]:
 
 # Force \n line endings (not csv's default \r\n) so the file matches the
 # gold bytes on every platform, including Windows/Git Bash.
-with open("output/summary.csv", "w", newline="") as fh:
+with open(f"{OUT_DIR}/summary.csv", "w", newline="") as fh:
     writer = csv.writer(fh, lineterminator="\n")
     writer.writerow(["line", "product_variant", "defect_rate_pct", "mix_pct"])
     for line, variant, rate, mix in rows:
@@ -55,7 +71,7 @@ recommended = "Line A" if line_a_wins_both else "Line B"
 # silently translates every \n to \r\n, which would make this file
 # byte-different from the gold answer on Windows even though the content
 # is identical. newline="" disables that translation.
-with open("output/recommendation.md", "w", newline="") as fh:
+with open(f"{OUT_DIR}/recommendation.md", "w", newline="") as fh:
     fh.write("## Recommendation\n\n")
     fh.write(f"Recommended line: {recommended}\n\n")
     fh.write("## Supporting Figures\n\n")
@@ -65,4 +81,4 @@ with open("output/recommendation.md", "w", newline="") as fh:
         fh.write(f"| {line} | {variant} | {rate:.1f} | {mix} |\n")
 PY
 
-echo "Wrote output/recommendation.md and output/summary.csv"
+echo "Wrote $OUT_DIR/recommendation.md and $OUT_DIR/summary.csv"
