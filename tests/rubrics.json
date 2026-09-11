@@ -2,7 +2,7 @@
   {
     "item": 1,
     "weight": 15,
-    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or the exact line \"Recommended line: Line B\", appearing on its own line.",
+    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or \"Recommended line: Line B\" on its own line, AND the chosen line is the one that wins on both Standard and Pro defect rates individually (per the submission's own summary.csv), not merely the one with the better blended/mix-weighted rate.",
     "category": "recommend",
     "verification_type": "text",
     "is_recommendation_criterion": true,

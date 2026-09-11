@@ -76,7 +76,26 @@ RECOMMEND_LINE_RE = re.compile(r"^Recommended line: (Line A|Line B)$", re.MULTIL
 
 def check_item_01(md, csvrows, table):
     matches = RECOMMEND_LINE_RE.findall(md or "")
-    return len(set(matches)) == 1 and len(matches) >= 1
+    if len(set(matches)) != 1 or len(matches) < 1:
+        return False
+    # Correctness, not just format: the recommended line must be whichever
+    # wins on BOTH variants individually per the submission's own reported
+    # defect rates (guards against a blended/mix-skewed rate looking better).
+    def rate(line, variant):
+        for row in (csvrows or []):
+            if row.get("line") == line and row.get("product_variant") == variant:
+                try:
+                    return float(row["defect_rate_pct"])
+                except (KeyError, ValueError):
+                    return None
+        return None
+    a_std, a_pro = rate("Line A", "Standard"), rate("Line A", "Pro")
+    b_std, b_pro = rate("Line B", "Standard"), rate("Line B", "Pro")
+    if None in (a_std, a_pro, b_std, b_pro):
+        return False
+    line_a_wins_both = a_std <= b_std and a_pro <= b_pro
+    correct = "Line A" if line_a_wins_both else "Line B"
+    return matches[0] == correct
 
 
 def check_csv_row_range(csvrows, line, variant, field, lo, hi):
