@@ -200,6 +200,17 @@ def check_table_row_presence(table, line, variant):
     return any(row["line"] == line and row["variant"] == variant for row in table)
 
 
+def check_cross_file_match_mix(md, csvrows, table, line, variant):
+    md_val = find_table_val(table, line, variant, "mix_pct")
+    csv_val = find_csv_val(csvrows, line, variant, "mix_pct")
+    if md_val is None or csv_val is None:
+        return False
+    try:
+        return int(md_val) == int(csv_val)
+    except ValueError:
+        return False
+
+
 def check_item_30(md, csvrows, table):
     if not OUTPUT_DIR.is_dir():
         return False
@@ -263,6 +274,7 @@ CHECKS = {
     31: lambda md, c, t: check_item_31_penalty(md, c, t),
     32: lambda md, c, t: check_mix_sum_penalty(c, "Line A"),
     33: lambda md, c, t: check_mix_sum_penalty(c, "Line B"),
+    34: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line A", "Standard"),
 }
 
 
