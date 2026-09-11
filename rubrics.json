@@ -368,15 +368,15 @@
     ]
   },
   {
-  "item": 34,
-  "weight": 3,
-  "criterion": "recommendation.md's Supporting Figures table mix_pct value for Line A Standard matches summary.csv's mix_pct value for the same line/variant exactly.",
-  "category": "consistency",
-  "verification_type": "code_execution",
-  "is_recommendation_criterion": false,
-  "grades_output_files": [
-    "recommendation.md",
-    "summary.csv"
-  ]
-}
+    "item": 34,
+    "weight": 3,
+    "criterion": "recommendation.md's Supporting Figures table mix_pct value for Line A Standard matches summary.csv's mix_pct value for the same line/variant exactly.",
+    "category": "synthesize",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "recommendation.md",
+      "summary.csv"
+    ]
+  }
 ]
