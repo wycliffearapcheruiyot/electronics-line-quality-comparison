@@ -2,35 +2,38 @@
   {
     "item": 1,
     "weight": 5,
-    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or \"Recommended line: Line B\" on its own line (exactly one of the two, not both).",
+    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or \"Recommended line: Line B\" verbatim on its own line.",
     "category": "recommend",
     "verification_type": "text",
     "is_recommendation_criterion": true,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Recommend"
   },
   {
     "item": 2,
     "weight": 10,
-    "criterion": "summary.csv contains a row where line is \"Line A\", product_variant is \"Standard\", and defect_rate_pct is between 2.0 and 2.2 inclusive.",
+    "criterion": "The defect_rate_pct value in summary.csv's \"Line A\" / \"Standard\" row is between 2.0 and 2.2 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
     "is_recommendation_criterion": true,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 3,
     "weight": 10,
-    "criterion": "summary.csv contains a row where line is \"Line A\", product_variant is \"Pro\", and defect_rate_pct is between 6.3 and 6.5 inclusive.",
+    "criterion": "The defect_rate_pct value in summary.csv's \"Line A\" / \"Pro\" row is between 6.3 and 6.5 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
     "is_recommendation_criterion": true,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 4,
@@ -41,7 +44,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 5,
@@ -52,7 +56,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 6,
@@ -63,7 +68,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 7,
@@ -74,7 +80,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 8,
@@ -85,7 +92,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 9,
@@ -96,7 +104,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 10,
@@ -107,7 +116,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 11,
@@ -118,73 +128,80 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 12,
     "weight": 4,
-    "criterion": "summary.csv contains a row where line is \"Line B\", product_variant is \"Standard\", and defect_rate_pct is between 2.5 and 2.7 inclusive.",
+    "criterion": "The defect_rate_pct value in summary.csv's \"Line B\" / \"Standard\" row is between 2.5 and 2.7 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 13,
     "weight": 4,
-    "criterion": "summary.csv contains a row where line is \"Line B\", product_variant is \"Pro\", and defect_rate_pct is between 7.7 and 7.9 inclusive.",
+    "criterion": "The defect_rate_pct value in summary.csv's \"Line B\" / \"Pro\" row is between 7.7 and 7.9 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 14,
     "weight": 3,
-    "criterion": "summary.csv contains a row where line is \"Line A\", product_variant is \"Standard\", and mix_pct is between 44 and 46 inclusive.",
+    "criterion": "The mix_pct value in summary.csv's \"Line A\" / \"Standard\" row is between 44 and 46 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 15,
     "weight": 3,
-    "criterion": "summary.csv contains a row where line is \"Line A\", product_variant is \"Pro\", and mix_pct is between 54 and 56 inclusive.",
+    "criterion": "The mix_pct value in summary.csv's \"Line A\" / \"Pro\" row is between 54 and 56 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 16,
     "weight": 3,
-    "criterion": "summary.csv contains a row where line is \"Line B\", product_variant is \"Standard\", and mix_pct is between 84 and 86 inclusive.",
+    "criterion": "The mix_pct value in summary.csv's \"Line B\" / \"Standard\" row is between 84 and 86 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 17,
     "weight": 3,
-    "criterion": "summary.csv contains a row where line is \"Line B\", product_variant is \"Pro\", and mix_pct is between 14 and 16 inclusive.",
+    "criterion": "The mix_pct value in summary.csv's \"Line B\" / \"Pro\" row is between 14 and 16 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 18,
@@ -195,7 +212,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 19,
@@ -206,7 +224,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 20,
@@ -217,7 +236,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 21,
@@ -228,7 +248,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 22,
@@ -240,7 +261,8 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 23,
@@ -252,7 +274,8 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 24,
@@ -264,7 +287,8 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 25,
@@ -276,7 +300,8 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 26,
@@ -287,7 +312,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 27,
@@ -298,7 +324,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 28,
@@ -309,7 +336,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 29,
@@ -320,7 +348,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 30,
@@ -332,7 +361,8 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 31,
@@ -343,7 +373,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 32,
@@ -354,7 +385,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 33,
@@ -365,7 +397,8 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Analyze & Validate"
   },
   {
     "item": 34,
@@ -377,7 +410,8 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ]
+    ],
+    "reasoning_phase": "Synthesize"
   },
   {
     "item": 35,
@@ -388,6 +422,62 @@
     "is_recommendation_criterion": true,
     "grades_output_files": [
       "recommendation.md"
-    ]
+    ],
+    "reasoning_phase": "Recommend"
+  },
+  {
+    "item": 36,
+    "criterion": "summary.csv contains a row where line is \"Line A\" and product_variant is \"Standard\".",
+    "category": "analyze",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "summary.csv"
+    ],
+    "reasoning_phase": "Explore & Discover"
+  },
+  {
+    "item": 37,
+    "criterion": "summary.csv contains a row where line is \"Line A\" and product_variant is \"Pro\".",
+    "category": "analyze",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "summary.csv"
+    ],
+    "reasoning_phase": "Explore & Discover"
+  },
+  {
+    "item": 38,
+    "criterion": "summary.csv contains a row where line is \"Line B\" and product_variant is \"Standard\".",
+    "category": "analyze",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "summary.csv"
+    ],
+    "reasoning_phase": "Explore & Discover"
+  },
+  {
+    "item": 39,
+    "criterion": "summary.csv contains a row where line is \"Line B\" and product_variant is \"Pro\".",
+    "category": "analyze",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "summary.csv"
+    ],
+    "reasoning_phase": "Explore & Discover"
+  },
+  {
+    "item": 40,
+    "criterion": "recommendation.md's prose (outside the Supporting Figures table) names the aggregate/blended defect rate as a distinct, explicitly discussed figure (e.g. using a term like \"blended\", \"aggregate\", or \"overall\" defect rate) rather than presenting only the per-variant breakdown with no mention of the top-line number.",
+    "category": "analyze",
+    "verification_type": "text",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "recommendation.md"
+    ],
+    "reasoning_phase": "Hypothesize"
   }
 ]

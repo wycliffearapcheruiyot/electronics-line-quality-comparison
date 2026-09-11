@@ -75,9 +75,11 @@ RECOMMEND_LINE_RE = re.compile(r"^Recommended line: (Line A|Line B)$", re.MULTIL
 
 
 def check_item_01(md, csvrows, table):
-    # Format only: exactly one of the two recommendation lines appears.
-    matches = RECOMMEND_LINE_RE.findall(md or "")
-    return len(set(matches)) == 1 and len(matches) >= 1
+    # Single fact: at least one of the two recommendation lines appears
+    # verbatim on its own line. Whether BOTH appear (ambiguous submission)
+    # is a separate fact, penalized independently by item 31 — item 1 no
+    # longer bundles the two together.
+    return bool(RECOMMEND_LINE_RE.search(md or ""))
 
 
 def check_item_35(md, csvrows, table):
@@ -229,6 +231,26 @@ def check_item_31_penalty(md, csvrows, table):
     return matches == {"Line A", "Line B"}
 
 
+def check_csv_row_presence(csvrows, line, variant):
+    # Standalone existence fact, split out of what check_csv_row_range used
+    # to bundle: does the (line, variant) row exist at all, independent of
+    # whether any particular figure in it is correct.
+    if not csvrows:
+        return False
+    return any(row.get("line") == line and row.get("product_variant") == variant for row in csvrows)
+
+
+HYPOTHESIZE_RE = re.compile(r"\b(blended|aggregate|overall)\b", re.IGNORECASE)
+
+
+def check_item_40(md, csvrows, table):
+    if not md:
+        return False
+    idx = md.find("## Supporting Figures")
+    prose = md if idx == -1 else md[:idx]
+    return bool(HYPOTHESIZE_RE.search(prose))
+
+
 def check_mix_sum_penalty(csvrows, line):
     vals = []
     for variant in VARIANTS:
@@ -280,6 +302,11 @@ CHECKS = {
     33: lambda md, c, t: check_mix_sum_penalty(c, "Line B"),
     34: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line A", "Standard"),
     35: check_item_35,
+    36: lambda md, c, t: check_csv_row_presence(c, "Line A", "Standard"),
+    37: lambda md, c, t: check_csv_row_presence(c, "Line A", "Pro"),
+    38: lambda md, c, t: check_csv_row_presence(c, "Line B", "Standard"),
+    39: lambda md, c, t: check_csv_row_presence(c, "Line B", "Pro"),
+    40: check_item_40,
 }
 
 

@@ -71,9 +71,20 @@ recommended = "Line A" if line_a_wins_both else "Line B"
 # silently translates every \n to \r\n, which would make this file
 # byte-different from the gold answer on Windows even though the content
 # is identical. newline="" disables that translation.
+blended = {
+    line: round(100 * sum(counts[(line, v)]["defects"] for v in ["Standard", "Pro"]) / totals[line], 1)
+    for line in ["Line A", "Line B"]
+}
+
 with open(f"{OUT_DIR}/recommendation.md", "w", newline="") as fh:
     fh.write("## Recommendation\n\n")
     fh.write(f"Recommended line: {recommended}\n\n")
+    fh.write(
+        f"Line A's overall/blended defect rate ({blended['Line A']}%) looks worse "
+        f"than Line B's aggregate rate ({blended['Line B']}%), but that gap is an "
+        "artifact of product mix, not process quality: once defect rate is "
+        "computed per variant, Line A wins on both Standard and Pro.\n\n"
+    )
     fh.write("## Supporting Figures\n\n")
     fh.write("| Line | Variant | Defect Rate (%) | Mix (%) |\n")
     fh.write("|------|---------|------------------|---------|\n")
