@@ -1,8 +1,8 @@
 [
   {
     "item": 1,
-    "weight": 15,
-    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or \"Recommended line: Line B\" on its own line, AND the chosen line is the one that wins on both Standard and Pro defect rates individually (per the submission's own summary.csv), not merely the one with the better blended/mix-weighted rate.",
+    "weight": 5,
+    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or \"Recommended line: Line B\" on its own line (exactly one of the two, not both).",
     "category": "recommend",
     "verification_type": "text",
     "is_recommendation_criterion": true,
@@ -377,6 +377,17 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
+    ]
+  },
+  {
+    "item": 35,
+    "weight": 9,
+    "criterion": "The recommended line in recommendation.md matches the objectively correct answer computed from the authoritative data (Line A, which wins on both the Standard and Pro defect rates individually once the correct source records are used), not merely the line that looks better on a mix-weighted blended rate.",
+    "category": "recommend",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": true,
+    "grades_output_files": [
+      "recommendation.md"
     ]
   }
 ]

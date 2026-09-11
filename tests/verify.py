@@ -75,27 +75,21 @@ RECOMMEND_LINE_RE = re.compile(r"^Recommended line: (Line A|Line B)$", re.MULTIL
 
 
 def check_item_01(md, csvrows, table):
+    # Format only: exactly one of the two recommendation lines appears.
     matches = RECOMMEND_LINE_RE.findall(md or "")
-    if len(set(matches)) != 1 or len(matches) < 1:
+    return len(set(matches)) == 1 and len(matches) >= 1
+
+
+def check_item_35(md, csvrows, table):
+    # Correctness, independent of formatting: the recommended line must be
+    # the objectively correct answer (Line A wins both variants
+    # individually), not whichever the submission's own numbers happen to
+    # imply. This guards against a mix-skewed blended rate looking better
+    # AND against grading a self-consistent-but-wrong submission as correct.
+    matches = RECOMMEND_LINE_RE.findall(md or "")
+    if len(set(matches)) != 1:
         return False
-    # Correctness, not just format: the recommended line must be whichever
-    # wins on BOTH variants individually per the submission's own reported
-    # defect rates (guards against a blended/mix-skewed rate looking better).
-    def rate(line, variant):
-        for row in (csvrows or []):
-            if row.get("line") == line and row.get("product_variant") == variant:
-                try:
-                    return float(row["defect_rate_pct"])
-                except (KeyError, ValueError):
-                    return None
-        return None
-    a_std, a_pro = rate("Line A", "Standard"), rate("Line A", "Pro")
-    b_std, b_pro = rate("Line B", "Standard"), rate("Line B", "Pro")
-    if None in (a_std, a_pro, b_std, b_pro):
-        return False
-    line_a_wins_both = a_std <= b_std and a_pro <= b_pro
-    correct = "Line A" if line_a_wins_both else "Line B"
-    return matches[0] == correct
+    return matches[0] == "Line A"
 
 
 def check_csv_row_range(csvrows, line, variant, field, lo, hi):
@@ -128,7 +122,15 @@ def check_item_07(md, csvrows, table):
 
 
 def check_item_08(md, csvrows, table):
-    return bool(md) and "| Line | Variant | Defect Rate (%) | Mix (%) |" in md
+    if not md:
+        return False
+    idx = md.find("## Supporting Figures")
+    if idx == -1:
+        return False
+    # The header row must appear AFTER the Supporting Figures heading, not
+    # merely anywhere in the file (a table placed elsewhere previously
+    # passed this check).
+    return "| Line | Variant | Defect Rate (%) | Mix (%) |" in md[idx:]
 
 
 def check_item_09(md, csvrows, table):
@@ -215,7 +217,9 @@ def check_item_30(md, csvrows, table):
     if not OUTPUT_DIR.is_dir():
         return False
     allowed = {"recommendation.md", "summary.csv"}
-    actual = {p.name for p in OUTPUT_DIR.iterdir() if p.is_file()}
+    # Check ALL entries (files AND subdirectories), not just files, so an
+    # extra directory under output/ is correctly rejected.
+    actual = {p.name for p in OUTPUT_DIR.iterdir()}
     return actual.issubset(allowed)
 
 
@@ -275,6 +279,7 @@ CHECKS = {
     32: lambda md, c, t: check_mix_sum_penalty(c, "Line A"),
     33: lambda md, c, t: check_mix_sum_penalty(c, "Line B"),
     34: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line A", "Standard"),
+    35: check_item_35,
 }
 
 

@@ -1,36 +1,181 @@
 [
-  {"test_name": "test_item_01", "item": 1, "weight": 15, "decision": true},
-  {"test_name": "test_item_02", "item": 2, "weight": 10, "decision": true},
-  {"test_name": "test_item_03", "item": 3, "weight": 10, "decision": true},
-  {"test_name": "test_item_04", "item": 4, "weight": 3},
-  {"test_name": "test_item_05", "item": 5, "weight": 3},
-  {"test_name": "test_item_06", "item": 6, "weight": 2},
-  {"test_name": "test_item_07", "item": 7, "weight": 2},
-  {"test_name": "test_item_08", "item": 8, "weight": 3},
-  {"test_name": "test_item_09", "item": 9, "weight": 3},
-  {"test_name": "test_item_10", "item": 10, "weight": 2},
-  {"test_name": "test_item_11", "item": 11, "weight": 2},
-  {"test_name": "test_item_12", "item": 12, "weight": 4},
-  {"test_name": "test_item_13", "item": 13, "weight": 4},
-  {"test_name": "test_item_14", "item": 14, "weight": 3},
-  {"test_name": "test_item_15", "item": 15, "weight": 3},
-  {"test_name": "test_item_16", "item": 16, "weight": 3},
-  {"test_name": "test_item_17", "item": 17, "weight": 3},
-  {"test_name": "test_item_18", "item": 18, "weight": 2},
-  {"test_name": "test_item_19", "item": 19, "weight": 2},
-  {"test_name": "test_item_20", "item": 20, "weight": 3},
-  {"test_name": "test_item_21", "item": 21, "weight": 3},
-  {"test_name": "test_item_22", "item": 22, "weight": 3},
-  {"test_name": "test_item_23", "item": 23, "weight": 3},
-  {"test_name": "test_item_24", "item": 24, "weight": 2},
-  {"test_name": "test_item_25", "item": 25, "weight": 2},
-  {"test_name": "test_item_26", "item": 26, "weight": 2},
-  {"test_name": "test_item_27", "item": 27, "weight": 2},
-  {"test_name": "test_item_28", "item": 28, "weight": 2},
-  {"test_name": "test_item_29", "item": 29, "weight": 2},
-  {"test_name": "test_item_30", "item": 30, "weight": 2},
-  {"test_name": "test_item_31", "item": 31, "weight": -5},
-  {"test_name": "test_item_32", "item": 32, "weight": -5},
-  {"test_name": "test_item_33", "item": 33, "weight": -5},
-  {"test_name": "test_item_34", "item": 34, "weight": 3}
+  {
+    "test_name": "test_item_01",
+    "item": 1,
+    "weight": 5,
+    "decision": true
+  },
+  {
+    "test_name": "test_item_02",
+    "item": 2,
+    "weight": 10,
+    "decision": true
+  },
+  {
+    "test_name": "test_item_03",
+    "item": 3,
+    "weight": 10,
+    "decision": true
+  },
+  {
+    "test_name": "test_item_04",
+    "item": 4,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_05",
+    "item": 5,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_06",
+    "item": 6,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_07",
+    "item": 7,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_08",
+    "item": 8,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_09",
+    "item": 9,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_10",
+    "item": 10,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_11",
+    "item": 11,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_12",
+    "item": 12,
+    "weight": 4
+  },
+  {
+    "test_name": "test_item_13",
+    "item": 13,
+    "weight": 4
+  },
+  {
+    "test_name": "test_item_14",
+    "item": 14,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_15",
+    "item": 15,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_16",
+    "item": 16,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_17",
+    "item": 17,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_18",
+    "item": 18,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_19",
+    "item": 19,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_20",
+    "item": 20,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_21",
+    "item": 21,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_22",
+    "item": 22,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_23",
+    "item": 23,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_24",
+    "item": 24,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_25",
+    "item": 25,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_26",
+    "item": 26,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_27",
+    "item": 27,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_28",
+    "item": 28,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_29",
+    "item": 29,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_30",
+    "item": 30,
+    "weight": 2
+  },
+  {
+    "test_name": "test_item_31",
+    "item": 31,
+    "weight": -5
+  },
+  {
+    "test_name": "test_item_32",
+    "item": 32,
+    "weight": -5
+  },
+  {
+    "test_name": "test_item_33",
+    "item": 33,
+    "weight": -5
+  },
+  {
+    "test_name": "test_item_34",
+    "item": 34,
+    "weight": 3
+  },
+  {
+    "test_name": "test_item_35",
+    "item": 35,
+    "weight": 9,
+    "decision": true
+  }
 ]
