@@ -74,6 +74,12 @@ or `Line B`. `product_variant` values must be exactly `Standard` or `Pro`.
 
 nearest whole number in both files. The figures, in `recommendation.md` and
 
-`summary.csv` need to match exactly.
+`summary.csv` need to match exactly. Automated grading checks each figure
+
+against the value a correct calculation from the provided data produces,
+
+with a small tolerance for rounding — a correctly computed and rounded
+
+figure will always pass.
 
 Don't put anything else under `output/`.
