@@ -31,5 +31,6 @@
   {"test_name": "test_item_30", "item": 30, "weight": 2},
   {"test_name": "test_item_31", "item": 31, "weight": -5},
   {"test_name": "test_item_32", "item": 32, "weight": -5},
-  {"test_name": "test_item_33", "item": 33, "weight": -5}
+  {"test_name": "test_item_33", "item": 33, "weight": -5},
+  {"test_name": "test_item_34", "item": 34, "weight": 3}
 ]
