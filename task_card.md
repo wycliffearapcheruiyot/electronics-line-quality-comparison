@@ -78,11 +78,11 @@ wrong final answer (Line B) rather than accidentally the right one.
 | Standard defect rate | ≈2.1% | ≈2.6% |
 | Pro defect rate | ≈6.4% | ≈7.8% |
 | Product mix (% Pro) | ≈55% | ≈15% |
-| Blended defect rate | ≈4.8% | ≈3.1% |
+| Blended defect rate | ≈4.5% | ≈3.4% |
 
 **Correct recommendation: Line A.** It beats Line B on both variants
 individually (2.1% vs 2.6% Standard, 6.4% vs 7.8% Pro). Line B's better-
-looking blended number (3.1% vs 4.8%) is an artifact of running mostly the
+looking blended number (3.4% vs 4.5%) is an artifact of running mostly the
 easier Standard variant, not evidence of better process quality.
 
 **Why the tempting alternatives are wrong:**

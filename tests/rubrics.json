@@ -491,5 +491,27 @@
     "grades_output_files": [
       "recommendation.md"
     ]
+  },
+  {
+    "item": 45,
+    "weight": 3,
+    "criterion": "recommendation.md's Supporting Figures table rows appear top-to-bottom in the order Line A/Standard, Line A/Pro, Line B/Standard, Line B/Pro, matching the order given in the instructions.",
+    "category": "instruction_following",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "recommendation.md"
+    ]
+  },
+  {
+    "item": 46,
+    "weight": 3,
+    "criterion": "summary.csv's four data rows appear top-to-bottom in the order Line A/Standard, Line A/Pro, Line B/Standard, Line B/Pro, matching the order given in the instructions.",
+    "category": "instruction_following",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "summary.csv"
+    ]
   }
 ]
