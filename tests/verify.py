@@ -304,6 +304,31 @@ def check_item_44(md, csvrows, table):
     return words_after >= 8 and bool(EXPLANATION_HINT_RE.search(after))
 
 
+EXPECTED_ROW_ORDER = [
+    ("Line A", "Standard"),
+    ("Line A", "Pro"),
+    ("Line B", "Standard"),
+    ("Line B", "Pro"),
+]
+
+
+def check_item_45(md, csvrows, table):
+    # Instruction specifies this exact top-to-bottom row order for the
+    # Supporting Figures table; presence checks (26-29) don't cover order.
+    if len(table) != 4:
+        return False
+    actual = [(r["line"], r["variant"]) for r in table]
+    return actual == EXPECTED_ROW_ORDER
+
+
+def check_item_46(md, csvrows, table):
+    # Same requirement, for summary.csv's data rows.
+    if not csvrows or len(csvrows) != 4:
+        return False
+    actual = [(r.get("line"), r.get("product_variant")) for r in csvrows]
+    return actual == EXPECTED_ROW_ORDER
+
+
 def check_mix_sum_penalty(csvrows, line):
     vals = []
     for variant in VARIANTS:
@@ -364,6 +389,8 @@ CHECKS = {
     42: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line B", "Standard"),
     43: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line B", "Pro"),
     44: check_item_44,
+    45: check_item_45,
+    46: check_item_46,
 }
 
 
