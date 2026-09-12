@@ -307,6 +307,9 @@ CHECKS = {
     38: lambda md, c, t: check_csv_row_presence(c, "Line B", "Standard"),
     39: lambda md, c, t: check_csv_row_presence(c, "Line B", "Pro"),
     40: check_item_40,
+    41: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line A", "Pro"),
+    42: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line B", "Standard"),
+    43: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line B", "Pro"),
 }
 
 
