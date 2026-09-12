@@ -12,7 +12,7 @@
   },
   {
     "item": 2,
-    "weight": 16,
+    "weight": 10,
     "criterion": "The defect_rate_pct value in summary.csv's \"Line A\" / \"Standard\" row is between 2.0 and 2.2 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -23,7 +23,7 @@
   },
   {
     "item": 3,
-    "weight": 16,
+    "weight": 10,
     "criterion": "The defect_rate_pct value in summary.csv's \"Line A\" / \"Pro\" row is between 6.3 and 6.5 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -122,22 +122,22 @@
   },
   {
     "item": 12,
-    "weight": 6,
+    "weight": 10,
     "criterion": "The defect_rate_pct value in summary.csv's \"Line B\" / \"Standard\" row is between 2.5 and 2.7 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
-    "is_recommendation_criterion": false,
+    "is_recommendation_criterion": true,
     "grades_output_files": [
       "summary.csv"
     ]
   },
   {
     "item": 13,
-    "weight": 6,
+    "weight": 10,
     "criterion": "The defect_rate_pct value in summary.csv's \"Line B\" / \"Pro\" row is between 7.7 and 7.9 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
-    "is_recommendation_criterion": false,
+    "is_recommendation_criterion": true,
     "grades_output_files": [
       "summary.csv"
     ]
@@ -436,7 +436,7 @@
   },
   {
     "item": 40,
-    "criterion": "recommendation.md's prose (outside the Supporting Figures table) names the aggregate/blended defect rate as a distinct, explicitly discussed figure (e.g. using a term like \"blended\", \"aggregate\", or \"overall\" defect rate) rather than presenting only the per-variant breakdown with no mention of the top-line number.",
+    "criterion": "recommendation.md's prose (outside the Supporting Figures table) explicitly names the aggregate/blended/overall defect rate for BOTH Line A and Line B (a term like \"blended\", \"aggregate\", or \"overall\" appearing alongside a numeric figure for each line), not merely a bare keyword with no per-line figures attached.",
     "category": "analyze",
     "verification_type": "text",
     "is_recommendation_criterion": false,
@@ -479,6 +479,17 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
+    ]
+  },
+  {
+    "item": 44,
+    "weight": 3,
+    "criterion": "recommendation.md's Recommendation section includes an explanatory sentence, appearing after the blended/aggregate/overall defect-rate mention, that explains what that figure does or doesn't indicate about line quality (e.g. references product mix, sample composition, or per-variant performance as the reason the blended figure can be misleading) rather than stopping at the bare number.",
+    "category": "analyze",
+    "verification_type": "text",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "recommendation.md"
     ]
   }
 ]

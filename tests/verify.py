@@ -73,13 +73,33 @@ def parse_md_table(md_text):
 # in other text — that's what "on its own line" in the rubric means.
 RECOMMEND_LINE_RE = re.compile(r"^Recommended line: (Line A|Line B)$", re.MULTILINE)
 
+SECTION_HEADING_RE = re.compile(r"^## +\S", re.MULTILINE)
+
+
+def get_section(md, heading):
+    """Return the text of the section starting at `## {heading}` up to
+    (but not including) the next `## ` heading, or "" if the heading is
+    missing. Used so checks scoped to a named section (per the
+    instruction's "A section titled ...") can't be satisfied by matching
+    text anywhere else in the document.
+    """
+    if not md:
+        return ""
+    idx = md.find(f"## {heading}")
+    if idx == -1:
+        return ""
+    rest = md[idx:]
+    m = SECTION_HEADING_RE.search(rest, 1)
+    return rest[: m.start()] if m else rest
+
 
 def check_item_01(md, csvrows, table):
-    # Single fact: at least one of the two recommendation lines appears
-    # verbatim on its own line. Whether BOTH appear (ambiguous submission)
-    # is a separate fact, penalized independently by item 31 — item 1 no
-    # longer bundles the two together.
-    return bool(RECOMMEND_LINE_RE.search(md or ""))
+    # The instruction requires the exact line inside "A section titled
+    # `## Recommendation`" — not merely somewhere in the document. Scope
+    # the search to that section so a submission that places the line
+    # elsewhere does not pass.
+    section = get_section(md, "Recommendation")
+    return bool(RECOMMEND_LINE_RE.search(section))
 
 
 def check_item_35(md, csvrows, table):
@@ -88,7 +108,8 @@ def check_item_35(md, csvrows, table):
     # individually), not whichever the submission's own numbers happen to
     # imply. This guards against a mix-skewed blended rate looking better
     # AND against grading a self-consistent-but-wrong submission as correct.
-    matches = RECOMMEND_LINE_RE.findall(md or "")
+    section = get_section(md, "Recommendation")
+    matches = RECOMMEND_LINE_RE.findall(section)
     if len(set(matches)) != 1:
         return False
     return matches[0] == "Line A"
@@ -190,14 +211,15 @@ def find_csv_val(csvrows, line, variant, field):
 
 
 def check_cross_file_match(md, csvrows, table, line, variant):
+    # The instruction requires the figures to "match exactly" between the
+    # two files. float() equates differently-formatted-but-numerically-
+    # equal strings (e.g. md "2.10" vs csv "2.1"), which isn't "exactly".
+    # Compare the trimmed strings directly instead.
     md_val = find_table_val(table, line, variant, "defect_rate_pct")
     csv_val = find_csv_val(csvrows, line, variant, "defect_rate_pct")
     if md_val is None or csv_val is None:
         return False
-    try:
-        return float(md_val) == float(csv_val)
-    except ValueError:
-        return False
+    return md_val.strip() == csv_val.strip()
 
 
 def check_table_row_presence(table, line, variant):
@@ -205,14 +227,14 @@ def check_table_row_presence(table, line, variant):
 
 
 def check_cross_file_match_mix(md, csvrows, table, line, variant):
+    # Same reasoning as check_cross_file_match: int() equates differently
+    # formatted-but-numerically-equal strings (e.g. md "045" vs csv "45").
+    # Compare the trimmed strings directly instead.
     md_val = find_table_val(table, line, variant, "mix_pct")
     csv_val = find_csv_val(csvrows, line, variant, "mix_pct")
     if md_val is None or csv_val is None:
         return False
-    try:
-        return int(md_val) == int(csv_val)
-    except ValueError:
-        return False
+    return md_val.strip() == csv_val.strip()
 
 
 def check_item_30(md, csvrows, table):
@@ -242,13 +264,44 @@ def check_csv_row_presence(csvrows, line, variant):
 
 HYPOTHESIZE_RE = re.compile(r"\b(blended|aggregate|overall)\b", re.IGNORECASE)
 
+# Words/phrases indicating the prose actually explains WHY the blended
+# figure does or doesn't tell you something, not just stating a number.
+EXPLANATION_HINT_RE = re.compile(
+    r"\b(mix|sample|skew|composition|volume|confound|misleading|driven|"
+    r"because|however|since|although|despite|due to|account|weight(ed)?)\b",
+    re.IGNORECASE,
+)
+
 
 def check_item_40(md, csvrows, table):
-    if not md:
+    # The instruction requires naming the overall/blended defect rate "for
+    # each line" — a figure for BOTH Line A and Line B, not a bare keyword
+    # anywhere in the prose. Scope to the Recommendation section and
+    # require a numeric figure plus both line names alongside the keyword.
+    section = get_section(md, "Recommendation")
+    if not section:
         return False
-    idx = md.find("## Supporting Figures")
-    prose = md if idx == -1 else md[:idx]
-    return bool(HYPOTHESIZE_RE.search(prose))
+    if not HYPOTHESIZE_RE.search(section):
+        return False
+    has_number = bool(re.search(r"\d+(\.\d+)?", section))
+    mentions_both_lines = "Line A" in section and "Line B" in section
+    return has_number and mentions_both_lines
+
+
+def check_item_44(md, csvrows, table):
+    # Previously-uncovered requirement: "briefly explaining your
+    # reasoning ... what it does or doesn't tell you" — not just stating
+    # the figure. Require substantive text after the keyword containing
+    # an explanation-style hint.
+    section = get_section(md, "Recommendation")
+    if not section:
+        return False
+    m = HYPOTHESIZE_RE.search(section)
+    if not m:
+        return False
+    after = section[m.end():]
+    words_after = len(after.split())
+    return words_after >= 8 and bool(EXPLANATION_HINT_RE.search(after))
 
 
 def check_mix_sum_penalty(csvrows, line):
@@ -310,6 +363,7 @@ CHECKS = {
     41: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line A", "Pro"),
     42: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line B", "Standard"),
     43: lambda md, c, t: check_cross_file_match_mix(md, c, t, "Line B", "Pro"),
+    44: check_item_44,
 }
 
 
