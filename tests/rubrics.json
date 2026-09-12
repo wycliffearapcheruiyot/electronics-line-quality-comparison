@@ -2,10 +2,10 @@
   {
     "item": 1,
     "weight": 6,
-    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or \"Recommended line: Line B\" verbatim on its own line.",
+    "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or \"Recommended line: Line B\" verbatim on its own line. This is a formatting check only \u2014 it does not verify which line was recommended; correctness is graded separately by item 35.",
     "category": "recommend",
     "verification_type": "text",
-    "is_recommendation_criterion": true,
+    "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
     ]

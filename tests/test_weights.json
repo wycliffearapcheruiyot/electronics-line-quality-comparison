@@ -3,7 +3,7 @@
     "test_name": "test_item_01",
     "item": 1,
     "weight": 6,
-    "decision": true
+    "decision": false
   },
   {
     "test_name": "test_item_02",
