@@ -381,7 +381,7 @@
   },
   {
     "item": 35,
-    "weight": 11,
+    "weight": 14,
     "criterion": "The recommended line in recommendation.md matches the objectively correct answer computed from the authoritative data (Line A, which wins on both the Standard and Pro defect rates individually once the correct source records are used), not merely the line that looks better on a mix-weighted blended rate.",
     "category": "recommend",
     "verification_type": "code_execution",
