@@ -8,13 +8,13 @@
   {
     "test_name": "test_item_02",
     "item": 2,
-    "weight": 16,
+    "weight": 10,
     "decision": true
   },
   {
     "test_name": "test_item_03",
     "item": 3,
-    "weight": 16,
+    "weight": 10,
     "decision": true
   },
   {
@@ -68,14 +68,14 @@
   {
     "test_name": "test_item_12",
     "item": 12,
-    "weight": 6,
-    "decision": false
+    "weight": 10,
+    "decision": true
   },
   {
     "test_name": "test_item_13",
     "item": 13,
-    "weight": 6,
-    "decision": false
+    "weight": 10,
+    "decision": true
   },
   {
     "test_name": "test_item_14",
@@ -254,6 +254,12 @@
   {
     "test_name": "test_item_43",
     "item": 43,
+    "weight": 3,
+    "decision": false
+  },
+  {
+    "test_name": "test_item_44",
+    "item": 44,
     "weight": 3,
     "decision": false
   }
