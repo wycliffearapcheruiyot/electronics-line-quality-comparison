@@ -1,7 +1,7 @@
 [
   {
     "item": 1,
-    "weight": 5,
+    "weight": 6,
     "criterion": "recommendation.md contains the exact line \"Recommended line: Line A\" or \"Recommended line: Line B\" verbatim on its own line.",
     "category": "recommend",
     "verification_type": "text",
@@ -12,7 +12,7 @@
   },
   {
     "item": 2,
-    "weight": 10,
+    "weight": 16,
     "criterion": "The defect_rate_pct value in summary.csv's \"Line A\" / \"Standard\" row is between 2.0 and 2.2 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -23,7 +23,7 @@
   },
   {
     "item": 3,
-    "weight": 10,
+    "weight": 16,
     "criterion": "The defect_rate_pct value in summary.csv's \"Line A\" / \"Pro\" row is between 6.3 and 6.5 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -56,7 +56,7 @@
   },
   {
     "item": 6,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md contains a section heading exactly \"## Recommendation\".",
     "category": "instruction_following",
     "verification_type": "text",
@@ -67,7 +67,7 @@
   },
   {
     "item": 7,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md contains a section heading exactly \"## Supporting Figures\".",
     "category": "instruction_following",
     "verification_type": "text",
@@ -100,7 +100,7 @@
   },
   {
     "item": 10,
-    "weight": 2,
+    "weight": 3,
     "criterion": "summary.csv contains exactly 5 lines total (1 header row plus 4 data rows).",
     "category": "instruction_following",
     "verification_type": "code_execution",
@@ -111,7 +111,7 @@
   },
   {
     "item": 11,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md's Supporting Figures table contains exactly 4 data rows.",
     "category": "instruction_following",
     "verification_type": "code_execution",
@@ -122,7 +122,7 @@
   },
   {
     "item": 12,
-    "weight": 4,
+    "weight": 6,
     "criterion": "The defect_rate_pct value in summary.csv's \"Line B\" / \"Standard\" row is between 2.5 and 2.7 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -133,7 +133,7 @@
   },
   {
     "item": 13,
-    "weight": 4,
+    "weight": 6,
     "criterion": "The defect_rate_pct value in summary.csv's \"Line B\" / \"Pro\" row is between 7.7 and 7.9 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -144,7 +144,7 @@
   },
   {
     "item": 14,
-    "weight": 3,
+    "weight": 4,
     "criterion": "The mix_pct value in summary.csv's \"Line A\" / \"Standard\" row is between 44 and 46 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -155,7 +155,7 @@
   },
   {
     "item": 15,
-    "weight": 3,
+    "weight": 4,
     "criterion": "The mix_pct value in summary.csv's \"Line A\" / \"Pro\" row is between 54 and 56 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -166,7 +166,7 @@
   },
   {
     "item": 16,
-    "weight": 3,
+    "weight": 4,
     "criterion": "The mix_pct value in summary.csv's \"Line B\" / \"Standard\" row is between 84 and 86 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -177,7 +177,7 @@
   },
   {
     "item": 17,
-    "weight": 3,
+    "weight": 4,
     "criterion": "The mix_pct value in summary.csv's \"Line B\" / \"Pro\" row is between 14 and 16 inclusive.",
     "category": "analyze",
     "verification_type": "code_execution",
@@ -188,7 +188,7 @@
   },
   {
     "item": 18,
-    "weight": 2,
+    "weight": 3,
     "criterion": "Every value in summary.csv's line column is exactly \"Line A\" or exactly \"Line B\".",
     "category": "instruction_following",
     "verification_type": "code_execution",
@@ -199,7 +199,7 @@
   },
   {
     "item": 19,
-    "weight": 2,
+    "weight": 3,
     "criterion": "Every value in summary.csv's product_variant column is exactly \"Standard\" or exactly \"Pro\".",
     "category": "instruction_following",
     "verification_type": "code_execution",
@@ -256,7 +256,7 @@
   },
   {
     "item": 24,
-    "weight": 2,
+    "weight": 3,
     "criterion": "The Line A / Pro defect-rate figure in recommendation.md's Supporting Figures table is numerically identical to the Line A/Pro defect_rate_pct value in summary.csv.",
     "category": "synthesize",
     "verification_type": "code_execution",
@@ -268,7 +268,7 @@
   },
   {
     "item": 25,
-    "weight": 2,
+    "weight": 3,
     "criterion": "The Line B / Standard defect-rate figure in recommendation.md's Supporting Figures table is numerically identical to the Line B/Standard defect_rate_pct value in summary.csv.",
     "category": "synthesize",
     "verification_type": "code_execution",
@@ -280,7 +280,7 @@
   },
   {
     "item": 26,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md's Supporting Figures table contains a row for Line A / Standard.",
     "category": "synthesize",
     "verification_type": "code_execution",
@@ -291,7 +291,7 @@
   },
   {
     "item": 27,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md's Supporting Figures table contains a row for Line A / Pro.",
     "category": "synthesize",
     "verification_type": "code_execution",
@@ -302,7 +302,7 @@
   },
   {
     "item": 28,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md's Supporting Figures table contains a row for Line B / Standard.",
     "category": "synthesize",
     "verification_type": "code_execution",
@@ -313,7 +313,7 @@
   },
   {
     "item": 29,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md's Supporting Figures table contains a row for Line B / Pro.",
     "category": "synthesize",
     "verification_type": "code_execution",
@@ -324,7 +324,7 @@
   },
   {
     "item": 30,
-    "weight": 2,
+    "weight": 3,
     "criterion": "The output/ directory contains no files other than recommendation.md and summary.csv.",
     "category": "instruction_following",
     "verification_type": "file_structure",
@@ -381,7 +381,7 @@
   },
   {
     "item": 35,
-    "weight": 14,
+    "weight": 23,
     "criterion": "The recommended line in recommendation.md matches the objectively correct answer computed from the authoritative data (Line A, which wins on both the Standard and Pro defect rates individually once the correct source records are used), not merely the line that looks better on a mix-weighted blended rate.",
     "category": "recommend",
     "verification_type": "code_execution",
@@ -447,7 +447,7 @@
   },
   {
     "item": 41,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md's Supporting Figures table mix_pct value for Line A Pro matches summary.csv's mix_pct value for the same line/variant exactly.",
     "category": "synthesize",
     "verification_type": "code_execution",
@@ -459,7 +459,7 @@
   },
   {
     "item": 42,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md's Supporting Figures table mix_pct value for Line B Standard matches summary.csv's mix_pct value for the same line/variant exactly.",
     "category": "synthesize",
     "verification_type": "code_execution",
@@ -471,7 +471,7 @@
   },
   {
     "item": 43,
-    "weight": 2,
+    "weight": 3,
     "criterion": "recommendation.md's Supporting Figures table mix_pct value for Line B Pro matches summary.csv's mix_pct value for the same line/variant exactly.",
     "category": "synthesize",
     "verification_type": "code_execution",

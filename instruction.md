@@ -100,11 +100,11 @@ A file with at minimum:
 
 verbatim on its own line. Beyond that line, briefly explaining your
 
-reasoning in this section (e.g. naming the overall/blended defect rate
+reasoning in this section is required: name the overall/blended defect
 
-for each line before explaining what it does or doesn't tell you) is
+rate for each line explicitly (using a word like "blended", "aggregate",
 
-encouraged.
+or "overall") before explaining what it does or doesn't tell you.
 
 
 

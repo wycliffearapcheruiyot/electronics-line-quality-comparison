@@ -2,19 +2,19 @@
   {
     "test_name": "test_item_01",
     "item": 1,
-    "weight": 5,
+    "weight": 6,
     "decision": true
   },
   {
     "test_name": "test_item_02",
     "item": 2,
-    "weight": 10,
+    "weight": 16,
     "decision": true
   },
   {
     "test_name": "test_item_03",
     "item": 3,
-    "weight": 10,
+    "weight": 16,
     "decision": true
   },
   {
@@ -32,13 +32,13 @@
   {
     "test_name": "test_item_06",
     "item": 6,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_07",
     "item": 7,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
@@ -56,61 +56,61 @@
   {
     "test_name": "test_item_10",
     "item": 10,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_11",
     "item": 11,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_12",
     "item": 12,
-    "weight": 4,
+    "weight": 6,
     "decision": false
   },
   {
     "test_name": "test_item_13",
     "item": 13,
-    "weight": 4,
+    "weight": 6,
     "decision": false
   },
   {
     "test_name": "test_item_14",
     "item": 14,
-    "weight": 3,
+    "weight": 4,
     "decision": false
   },
   {
     "test_name": "test_item_15",
     "item": 15,
-    "weight": 3,
+    "weight": 4,
     "decision": false
   },
   {
     "test_name": "test_item_16",
     "item": 16,
-    "weight": 3,
+    "weight": 4,
     "decision": false
   },
   {
     "test_name": "test_item_17",
     "item": 17,
-    "weight": 3,
+    "weight": 4,
     "decision": false
   },
   {
     "test_name": "test_item_18",
     "item": 18,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_19",
     "item": 19,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
@@ -140,43 +140,43 @@
   {
     "test_name": "test_item_24",
     "item": 24,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_25",
     "item": 25,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_26",
     "item": 26,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_27",
     "item": 27,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_28",
     "item": 28,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_29",
     "item": 29,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_30",
     "item": 30,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
@@ -206,7 +206,7 @@
   {
     "test_name": "test_item_35",
     "item": 35,
-    "weight": 14,
+    "weight": 23,
     "decision": true
   },
   {
@@ -242,19 +242,19 @@
   {
     "test_name": "test_item_41",
     "item": 41,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_42",
     "item": 42,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   },
   {
     "test_name": "test_item_43",
     "item": 43,
-    "weight": 2,
+    "weight": 3,
     "decision": false
   }
 ]
