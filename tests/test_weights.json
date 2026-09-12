@@ -206,7 +206,7 @@
   {
     "test_name": "test_item_35",
     "item": 35,
-    "weight": 11,
+    "weight": 14,
     "decision": true
   },
   {
@@ -237,6 +237,24 @@
     "test_name": "test_item_40",
     "item": 40,
     "weight": 3,
+    "decision": false
+  },
+  {
+    "test_name": "test_item_41",
+    "item": 41,
+    "weight": 2,
+    "decision": false
+  },
+  {
+    "test_name": "test_item_42",
+    "item": 42,
+    "weight": 2,
+    "decision": false
+  },
+  {
+    "test_name": "test_item_43",
+    "item": 43,
+    "weight": 2,
     "decision": false
   }
 ]

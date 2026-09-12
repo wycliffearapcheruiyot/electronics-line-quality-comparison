@@ -381,7 +381,7 @@
   },
   {
     "item": 35,
-    "weight": 11,
+    "weight": 14,
     "criterion": "The recommended line in recommendation.md matches the objectively correct answer computed from the authoritative data (Line A, which wins on both the Standard and Pro defect rates individually once the correct source records are used), not merely the line that looks better on a mix-weighted blended rate.",
     "category": "recommend",
     "verification_type": "code_execution",
@@ -444,5 +444,41 @@
       "recommendation.md"
     ],
     "weight": 3
+  },
+  {
+    "item": 41,
+    "weight": 2,
+    "criterion": "recommendation.md's Supporting Figures table mix_pct value for Line A Pro matches summary.csv's mix_pct value for the same line/variant exactly.",
+    "category": "synthesize",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "recommendation.md",
+      "summary.csv"
+    ]
+  },
+  {
+    "item": 42,
+    "weight": 2,
+    "criterion": "recommendation.md's Supporting Figures table mix_pct value for Line B Standard matches summary.csv's mix_pct value for the same line/variant exactly.",
+    "category": "synthesize",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "recommendation.md",
+      "summary.csv"
+    ]
+  },
+  {
+    "item": 43,
+    "weight": 2,
+    "criterion": "recommendation.md's Supporting Figures table mix_pct value for Line B Pro matches summary.csv's mix_pct value for the same line/variant exactly.",
+    "category": "synthesize",
+    "verification_type": "code_execution",
+    "is_recommendation_criterion": false,
+    "grades_output_files": [
+      "recommendation.md",
+      "summary.csv"
+    ]
   }
 ]
