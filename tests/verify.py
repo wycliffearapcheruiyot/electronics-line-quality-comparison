@@ -244,7 +244,7 @@ def check_item_30(md, csvrows, table):
     # Check ALL entries (files AND subdirectories), not just files, so an
     # extra directory under output/ is correctly rejected.
     actual = {p.name for p in OUTPUT_DIR.iterdir()}
-    return actual.issubset(allowed)
+    return bool(actual) and actual == allowed
 
 
 def check_item_31_penalty(md, csvrows, table):
