@@ -6,12 +6,12 @@ set -euo pipefail
 
 # Prefer the container's runtime layout (input at /data, output at
 # /output — matching environment/Dockerfile's COPY destination and
-# tests/verify.py's OUTPUT_DIR) so this produces identical bytes whether
+# tests/verify.py's OUTPUT_DIR (now /workspace/output)) so this produces identical bytes whether
 # Harbor runs it inside the oracle container or you run it locally
 # against a repo checkout for testing.
 if [ -d /data ]; then
   DATA_DIR=/data
-  OUT_DIR=/output
+  OUT_DIR=/workspace/output
 else
   cd "$(dirname "$0")/.."   # repo root, for local testing outside a container
   DATA_DIR=environment/data

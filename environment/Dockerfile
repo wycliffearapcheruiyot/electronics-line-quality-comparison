@@ -13,3 +13,5 @@ RUN pip3 install --no-cache-dir \
 COPY data/ /data/
 
 WORKDIR /data
+
+RUN mkdir -p /workspace/output && chmod 777 /workspace/output

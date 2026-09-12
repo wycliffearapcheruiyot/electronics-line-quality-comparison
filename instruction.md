@@ -74,15 +74,15 @@ you.
 
 
 
-Save your results under the absolute path `/output/` inside the
+Save your results under the absolute path `/workspace/output/` inside the
 
-container (i.e. `/output/recommendation.md` and `/output/summary.csv`
+container (i.e. `/workspace/output/recommendation.md` and `/workspace/output/summary.csv`
 
 — not an `output/` folder relative to your working directory).
 
 
 
-### 1. `/output/recommendation.md`
+### 1. `/workspace/output/recommendation.md`
 
 
 
@@ -124,7 +124,7 @@ Pro, Line B Standard, Line B Pro.
 
 
 
-### 2. `/output/summary.csv`
+### 2. `/workspace/output/summary.csv`
 
 
 
@@ -172,4 +172,4 @@ allowing ±0.1 percentage point on `defect_rate_pct` and ±1 percentage point on
 
 
 
-Don't put anything else under `/output/`.
+Don't put anything else under `/workspace/output/`.
