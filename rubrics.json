@@ -8,8 +8,7 @@
     "is_recommendation_criterion": true,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Recommend"
+    ]
   },
   {
     "item": 2,
@@ -20,8 +19,7 @@
     "is_recommendation_criterion": true,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 3,
@@ -32,8 +30,7 @@
     "is_recommendation_criterion": true,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 4,
@@ -44,8 +41,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 5,
@@ -56,8 +52,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 6,
@@ -68,8 +63,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 7,
@@ -80,8 +74,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 8,
@@ -92,8 +85,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 9,
@@ -104,8 +96,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 10,
@@ -116,8 +107,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 11,
@@ -128,8 +118,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 12,
@@ -140,8 +129,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 13,
@@ -152,8 +140,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 14,
@@ -164,8 +151,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 15,
@@ -176,8 +162,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 16,
@@ -188,8 +173,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 17,
@@ -200,8 +184,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 18,
@@ -212,8 +195,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 19,
@@ -224,8 +206,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 20,
@@ -236,8 +217,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 21,
@@ -248,8 +228,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 22,
@@ -261,8 +240,7 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 23,
@@ -274,8 +252,7 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 24,
@@ -287,8 +264,7 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 25,
@@ -300,8 +276,7 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 26,
@@ -312,8 +287,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 27,
@@ -324,8 +298,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 28,
@@ -336,8 +309,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 29,
@@ -348,8 +320,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 30,
@@ -361,8 +332,7 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 31,
@@ -373,8 +343,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 32,
@@ -385,8 +354,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 33,
@@ -397,8 +365,7 @@
     "is_recommendation_criterion": false,
     "grades_output_files": [
       "summary.csv"
-    ],
-    "reasoning_phase": "Analyze & Validate"
+    ]
   },
   {
     "item": 34,
@@ -410,20 +377,18 @@
     "grades_output_files": [
       "recommendation.md",
       "summary.csv"
-    ],
-    "reasoning_phase": "Synthesize"
+    ]
   },
   {
     "item": 35,
-    "weight": 9,
+    "weight": 11,
     "criterion": "The recommended line in recommendation.md matches the objectively correct answer computed from the authoritative data (Line A, which wins on both the Standard and Pro defect rates individually once the correct source records are used), not merely the line that looks better on a mix-weighted blended rate.",
     "category": "recommend",
     "verification_type": "code_execution",
     "is_recommendation_criterion": true,
     "grades_output_files": [
       "recommendation.md"
-    ],
-    "reasoning_phase": "Recommend"
+    ]
   },
   {
     "item": 36,
@@ -434,7 +399,7 @@
     "grades_output_files": [
       "summary.csv"
     ],
-    "reasoning_phase": "Explore & Discover"
+    "weight": 2
   },
   {
     "item": 37,
@@ -445,7 +410,7 @@
     "grades_output_files": [
       "summary.csv"
     ],
-    "reasoning_phase": "Explore & Discover"
+    "weight": 2
   },
   {
     "item": 38,
@@ -456,7 +421,7 @@
     "grades_output_files": [
       "summary.csv"
     ],
-    "reasoning_phase": "Explore & Discover"
+    "weight": 2
   },
   {
     "item": 39,
@@ -467,7 +432,7 @@
     "grades_output_files": [
       "summary.csv"
     ],
-    "reasoning_phase": "Explore & Discover"
+    "weight": 2
   },
   {
     "item": 40,
@@ -478,6 +443,6 @@
     "grades_output_files": [
       "recommendation.md"
     ],
-    "reasoning_phase": "Hypothesize"
+    "weight": 3
   }
 ]
