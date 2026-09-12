@@ -2,12 +2,12 @@
 """Rule-based verifier for the electronics-line-quality-comparison task.
 
 Reads rubrics.json + test_weights.json (both bundled next to this file),
-checks each rubric criterion against /output/[filename], and writes the
+checks each rubric criterion against /workspace/output/[filename], and writes the
 resulting reward to /logs/verifier/reward.json.
 
 Deterministic by construction: no network calls, no randomness, no
 reliance on the current time. Every check is a pure function of the
-bytes already sitting in /output/.
+bytes already sitting in /workspace/output/.
 """
 import csv
 import json
@@ -18,7 +18,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 RUBRICS_PATH = HERE / "rubrics.json"
 WEIGHTS_PATH = HERE / "test_weights.json"
-OUTPUT_DIR = Path("/output")
+OUTPUT_DIR = Path("/workspace/output")
 REWARD_DIR = Path("/logs/verifier")
 
 LINES = ["Line A", "Line B"]
